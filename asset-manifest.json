@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/myWebPage/static/css/main.2b1c8b05.css",
+    "main.js": "/myWebPage/static/js/main.b5569bed.js",
+    "static/media/232461_medium.mp4": "/myWebPage/static/media/232461_medium.bc8301d483b012cd64ce.mp4",
+    "static/media/cream-621340.jpg": "/myWebPage/static/media/cream-621340.d7c2bf8270d4d7aeb498.jpg",
+    "static/media/clamy-blusher-4517880_1920.jpg": "/myWebPage/static/media/clamy-blusher-4517880_1920.c1524fa8f801af0528f2.jpg",
+    "static/media/collection-5180255.jpg": "/myWebPage/static/media/collection-5180255.8f39af2e9e8f742fe3bf.jpg",
+    "static/media/natural-cosmetics-4528581_1920.jpg": "/myWebPage/static/media/natural-cosmetics-4528581_1920.bebc05915de93b59bd1c.jpg",
+    "static/media/glass-4108085_1280.jpg": "/myWebPage/static/media/glass-4108085_1280.9dc2d1858070d2120cd4.jpg",
+    "static/media/cream-1327847_1280.jpg": "/myWebPage/static/media/cream-1327847_1280.7b6fae720c61cb5e16e0.jpg",
+    "static/media/cosmetics-6345792_1280.jpg": "/myWebPage/static/media/cosmetics-6345792_1280.1369a017e97fc3bd69d8.jpg",
+    "index.html": "/myWebPage/index.html",
+    "main.2b1c8b05.css.map": "/myWebPage/static/css/main.2b1c8b05.css.map",
+    "main.b5569bed.js.map": "/myWebPage/static/js/main.b5569bed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b1c8b05.css",
+    "static/js/main.b5569bed.js"
+  ]
+}
