@@ -30,11 +30,26 @@
 
 .routerNav >  p{
   margin: 30px 30px 30px 30px;
+  font-size: 32px;
+  color: rgb(124, 102, 99, 100%);
 }
+
+
+
+
+
+/* 여기서 부터 body */
 
 
 .blueEraserImage{
   margin-bottom: 100px;
+}
+
+.arrowBox1{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 510px;
 }
 
 .blueEraserImage > img{
@@ -204,17 +219,21 @@
 }
 
 
+
+
 .forMySkinContentsBox > h1{
   text-align: center;
   font-size: 64px;
 }
 
-.arrowBox{
+.arrowBox2{
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
   position: relative;
-  top: 300px;
+  top: 200px;
 }
 
 
@@ -222,12 +241,12 @@
 .forMySkin{
   display: flex;
   justify-content: space-around;
+  
 }
 
 .forMySkinImg{
-  border: 1px solid black;
   width: 302px;
-  height:602px;
+  height: 602px;
 
 }
 
@@ -237,8 +256,68 @@
 }
 
 
-.forMySkinText{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.forMySkinText > p{
+  text-align: center;
 }
+
+.productTag{
+  font-size: 24px;
+  color: rgb(51, 49, 49, 66%);
+}
+
+.productName{
+  font-size:28px;
+}
+
+.productSkill{
+  font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+/* 여기서 부터 footer */
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 65px ;
+  background-color: gray;
+}  
+
+
+.snsIconBox{
+  width: 225px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.footerTextContentsBox{
+  display: flex;
+  justify-content: space-between;
+  width: 560px;
+}
+
+
+.selectLanguage{
+  padding-top: 100px;
+}
+
+.selectLanguage > select{
+  border: 3px solid black;
+  height: 30px;
+}
+
+
+
+
+

@@ -5,14 +5,14 @@ import { Route, Link } from "react-router-dom";
 import { OurStory } from "./components/subComponents/OurStory";
 import { BestandYou } from "./components/subComponents/BestandYou";
 import { Product } from "./components/subComponents/Product";
-import './images/cream-621340.jpg'
-import './video/232461_medium.mp4'
-import './images/clamy-blusher-4517880_1920.jpg'
-import './images/natural-cosmetics-4528581_1920.jpg'
-import './images/collection-5180255.jpg'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { IoIosSearch } from "react-icons/io";
 
 function App() {
 
@@ -31,7 +31,7 @@ function App() {
 <div className='loginAndFindStore'>
   <p>로그인</p>
   <p>매장찾기</p>
-  {/* 돋보고 아이콘 */}
+  <p><IoIosSearch size={25}/></p>
 </div>
 
     </div>
@@ -67,6 +67,12 @@ function App() {
       <img src={require('./images/cream-621340.jpg')} alt='블루 이레이저크림'/>
         <div/>
 
+      <div className='arrowBox1'>
+    <IoIosArrowBack  size={100}/>
+    <IoIosArrowForward size={100}/>
+    </div>
+
+    
         <div className='blueEraserTextBox'> 
         <h1>블루 이레이저 크림</h1>
         <h3> 블루이레이저 크림 트러블 흔적 개선 여드름 케어</h3>
@@ -134,7 +140,7 @@ function App() {
     <div className='forMySkinContentsBox'>
     <h1>For # My Skin</h1>
 
-    <div className='arrowBox'>
+    <div className='arrowBox2'>
     <ArrowBackIosIcon  fontSize='large'/>
     <ArrowForwardIosIcon fontSize='large'/>
     </div>
@@ -143,9 +149,9 @@ function App() {
       <img src={require('./images/cosmetics-6345792_1280.jpg')} alt='딥클렌징'/>
 
       <div className='forMySkinText'>
-      <p>#딥클렌징</p>
-      <p>어메이징 딥 클렌징 폼</p>
-      <p>모공피지연화 클렌징 폼</p>
+      <p className='productTag'>#딥클렌징</p>
+      <p className='productName'>어메이징 딥 클렌징 폼</p>
+      <p className='productSkill'>모공피지연화 클렌징 폼</p>
       </div>
 
       </div>
@@ -154,9 +160,9 @@ function App() {
       <img src={require('./images/cream-621340.jpg')} alt='자국제거'/>
 
       <div className='forMySkinText'>
-      <p>#자국제거</p>
-      <p>블루 이레이저 크림</p>
-      <p>흉터 제거 제생크림</p>
+      <p className='productTag'>#자국제거</p>
+      <p className='productName'>블루 이레이저 크림</p>
+      <p className='productSkill'>흉터 제거 제생크림</p>
       </div>
 
       </div>
@@ -165,9 +171,9 @@ function App() {
       <img src={require('./images/glass-4108085_1280.jpg')} alt='영양공급'/>
 
       <div className='forMySkinText'>
-      <p>#영양공급</p>
-      <p>세럼 세럼 세럼 세럼</p>
-      <p>영양공급 세럼</p>
+      <p className='productTag'>#영양공급</p>
+      <p className='productName'>세럼 세럼 세럼 세럼</p>
+      <p className='productSkill'>영양공급 세럼</p>
       </div>
 
       </div>
@@ -176,9 +182,9 @@ function App() {
       <img src={require('./images/cream-1327847_1280.jpg')} alt='보습크림'/>
 
       <div className='forMySkinText'>
-      <p>#보습크림림</p>
-      <p>보습크림 보습크림림</p>
-      <p>보습크림 보습크림 보습크림</p>
+      <p className='productTag'>#보습크림</p>
+      <p className='productName'>보습크림 보습크림</p>
+      <p className='productSkill'>보습크림 보습크림 보습크림</p>
       </div>
 
       </div>
@@ -192,22 +198,22 @@ function App() {
 
     </div>
 {/* footer부분 */}
-    <div>
+    <div className='footer'>
 
-<div>
+<div className='footerContentsBox'>
 
-<div>
-  <div>페이스북</div>
-  <div>인스타그램</div> 
-  <div>유튜브</div>
+<div className='snsIconBox'>
+  <FaFacebook size={45}/>
+  <FaInstagram size={45}/>
+  <FaYoutube  size={45}/>
 </div>
 
-<div>
+<div className='footerTextContentsBox'>
   <p>회사소개 | </p>
-  <p>서비스이용약관 | </p>
-  <p>개인정보처리방침 | </p>
-  <p>영상정보처리방침 | </p>
-  <p>뷰티포인트트 | </p>
+  <p> 서비스이용약관 | </p>
+  <p> 개인정보처리방침 | </p>
+  <p> 영상정보처리방침 | </p>
+  <p> 뷰티포인트</p>
 </div>
 
 <p>고객서비스센터(수신자요금부담) 080-023-5454 (월~금 : AM 09:00 ~ PM 06:00</p>
@@ -216,9 +222,11 @@ function App() {
 
 </div>
 
-<div>
-<select name="" id="">
-  
+<div className='selectLanguage'>
+<select name="language" id="lagn">
+  <option value='한국/한국어'>한국/한국어</option>
+  <option value='international/English'>international/English</option>
+  <option value='중국'>중국</option>
 </select>
 </div>
 </div>
