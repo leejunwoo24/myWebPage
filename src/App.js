@@ -1,10 +1,14 @@
-import react from 'react';
+import react, { useState } from 'react';
 import './App.css';
 //yarn add react-router-dom@5
 import { Route, Link } from "react-router-dom";
 import { OurStory } from "./components/subComponents/OurStory";
 import { BestandYou } from "./components/subComponents/BestandYou";
 import { Product } from "./components/subComponents/Product";
+import img1 from './images/cream-621340.jpg';
+import img2 from './images/cream-3496778.jpg';
+import img3 from'./images/honey-3084009_1280.jpg';
+import img4 from './images/cosmetics-4365139_1920.jpg';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { IoIosArrowBack } from "react-icons/io";
@@ -14,7 +18,56 @@ import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
 
+
+const images = [
+  {
+    id: 1,
+    src: img1,
+    title: '블루 이레이져 크림',
+    explain: '블루 이레이져 크림 트러블 흔적 개선 여드름 케어'
+    
+  },
+  {
+    id: 2,
+    src: img2,
+    title: '마몽드 어성초 크림',
+    expain: '마몽드 어성초 크림 여드름 피부 진정 여드름 케어 '
+  },
+  {
+    id:3,
+    src: img3,
+    title: '마몽드 허니 블렌딩 로션',
+    explain: '마몽드 허니 블렌딩 로션 건성 피부 보습 피부장벽'
+  },
+  {
+    id:4,
+    src: img4,
+    title:'마몽드 크림 크림 크림림',
+    explain: '마몽드 크림 크림 크림 크림 크림 크림 크림크림림'
+  }
+
+]
+
+
 function App() {
+  const [activeIndex, setActiveindex] = useState(0);
+
+  const nextSlide = () => {
+    if(activeIndex < images.length -1){
+      setActiveindex((previndex) => previndex + 1)
+    } else {
+      setActiveindex(0);
+    } 
+  }
+
+
+  const prevSlide = () => {
+    if(activeIndex > 0){
+      setActiveindex((previndex) => previndex -1)
+    } else{
+      setActiveindex(images.length-1)
+    }
+  }
 
   
   return (
@@ -63,13 +116,19 @@ function App() {
 <div className='homeBody'>
 
       {/* 화면 최상단 메인 이미지 */}
-      <div className='blueEraserImage'>
-      <img src={require('./images/cream-621340.jpg')} alt='블루 이레이저크림'/>
+      <div className='blueEraserImageBox'>
+      {images.map((image, index) => (
+        <div className='blueEraserImage'>
+        {index === activeIndex && <img alt='이미지' src={image.src}/>}
+        </div>
+      )
+          
+      )}
         <div/>
 
       <div className='arrowBox1'>
-    <IoIosArrowBack  size={100}/>
-    <IoIosArrowForward size={100}/>
+    <IoIosArrowBack  size={100} onClick={prevSlide}/>
+    <IoIosArrowForward size={100} onClick={nextSlide}/>
     </div>
 
     

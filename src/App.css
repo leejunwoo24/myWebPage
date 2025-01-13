@@ -5,6 +5,7 @@
   flex-direction: column;
   background-color: gray;
   height: 168px;
+  width: 100%;
   
 }
 
@@ -41,9 +42,19 @@
 /* 여기서 부터 body */
 
 
-.blueEraserImage{
+.blueEraserImageBox{
   margin-bottom: 100px;
 }
+
+
+.blueEraserImage{
+  width: 100%;
+}
+
+.blueEraserImage > img{
+  width: 100%;
+}
+
 
 .arrowBox1{
   display: flex;
