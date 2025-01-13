@@ -31,7 +31,7 @@ const images = [
     id: 2,
     src: img2,
     title: '마몽드 어성초 크림',
-    expain: '마몽드 어성초 크림 여드름 피부 진정 여드름 케어 '
+    explain: '마몽드 어성초 크림 여드름 피부 진정 여드름 케어 '
   },
   {
     id:3,
@@ -42,8 +42,8 @@ const images = [
   {
     id:4,
     src: img4,
-    title:'마몽드 크림 크림 크림림',
-    explain: '마몽드 크림 크림 크림 크림 크림 크림 크림크림림'
+    title:'마몽드 크림 크림 크림',
+    explain: '마몽드 크림 크림 크림 크림 크림 크림 크림크림'
   }
 
 ]
@@ -118,8 +118,17 @@ function App() {
       {/* 화면 최상단 메인 이미지 */}
       <div className='blueEraserImageBox'>
       {images.map((image, index) => (
+        <div className='blueEraserImages'>
+        {index === activeIndex && 
         <div className='blueEraserImage'>
-        {index === activeIndex && <img alt='이미지' src={image.src}/>}
+          <img alt='이미지' src={image.src}/>
+          <div className='blueEraserTextBox'>
+          <h1>{image.title}</h1>
+          <h3>{image.explain}</h3>
+          <button>자세히 보기</button>
+          </div>
+        </div>
+        }
         </div>
       )
           
@@ -132,11 +141,7 @@ function App() {
     </div>
 
     
-        <div className='blueEraserTextBox'> 
-        <h1>블루 이레이저 크림</h1>
-        <h3> 블루이레이저 크림 트러블 흔적 개선 여드름 케어</h3>
-        <button>자세히 보기</button>
-        </div>
+        
     
       </div>
 
