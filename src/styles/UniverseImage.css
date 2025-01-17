@@ -1,0 +1,36 @@
+.universeImageBox{
+  height: 800px;
+}
+
+.universeImageBox > img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.FLORAGLOWROSEContentsBox{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 520px;
+  left: 555px;
+}
+
+.FLORAGLOWROSEText{
+  font-size: 48px;
+  margin-bottom: 0px;
+}
+
+.universeText{
+  font-size: 36px;
+}
+
+.FLORAGLOWROSEContentsBox > button {
+  font-size: 24px;
+  width: 184px;
+  height: 48px;
+  background-color: rgb(255, 255, 255, 100%);
+}

@@ -1,0 +1,80 @@
+.slider-box{
+  margin-top: 40px;
+  width:90%;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  
+}
+
+.forMySkinTitle{
+  font-size: 40px;
+  margin-left: 580px;
+}
+
+.slider-box .slick-prev::before,
+.slider-box .slick-next::before{
+    color: gray;
+    opacity: 1;
+    position: relative;
+    bottom: 100px;
+    
+    
+  }
+
+  .slick-prev::before{
+    font-size: 50px;
+  }
+
+  .slick-next::before{
+    margin-left: 20px;
+    font-size: 50px;
+  }
+
+
+  .slider-box > div {
+    width:100%;
+
+  }
+
+
+
+
+  .forMySkinProductBox{
+    margin-bottom: 50px;
+    margin-left: 50px;
+  }
+
+  .forMySkinProductBox > img{
+    width: 84%;
+    height: 365px;
+  
+
+  }
+
+  
+
+  .forMySkinProductTextBox {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+
+  .forMySkinProductTextBox{
+    margin-right: 60px;
+  }
+
+  .text1{
+    font-size: 24px;
+    color: rgb(51, 49, 49, 66%);
+  
+  }
+
+  .text2{
+    font-size:28px;
+  }
+
+  .text3{
+    font-size: 24px;
+  }

@@ -1,0 +1,63 @@
+.webHeader{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 168px;
+  width: 100%;
+  
+}
+
+
+
+.logologinfindstore{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 35%;
+  
+}
+
+
+
+.loginAndFindStore{
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.routerNav{
+  display: flex;
+  justify-content: center;
+}
+
+.routerNav >  p{
+  margin: 30px 30px 30px 30px;
+  font-size: 32px;
+
+}
+
+.routerLink:visited{
+  color: black;
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,39 @@
+
+.bannerImageBox{
+  width: 100%;
+}
+
+
+.bannerImage{
+  width: 100%;
+  height: 980px;
+}
+
+
+
+.bannerTextBox{
+  position: relative;
+  bottom: 490px;
+  left: 210px;
+}
+
+
+.bannerTextBox > h1{
+  font-size: 48px;
+  font-weight: bold;
+}
+
+
+.bannerTextBox > h3{
+  font-size: 36px
+}
+
+.bannerTextBox > button{
+  height: 40px;
+  background-color: rgb(172,170,170,20%);
+  color: white;
+  border: 1px solid black;
+  width: 224px;
+  height: 63px;
+  font-size:36px;
+}
