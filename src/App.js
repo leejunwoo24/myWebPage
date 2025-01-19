@@ -3,11 +3,12 @@ import react from 'react';
 import './App.css';
 import { Route } from "react-router-dom";
 import { OurStory } from "./components/subComponents/OurStory";
-import { BestandYou } from "./components/subComponents/BestandYou";
+import { Best } from './components/subComponents/BestandYou/Best';
 import { Product } from "./components/subComponents/Product";
 import { HomeBody } from './HomeBody';
 import { Footer } from './components/Footer';
 import { Header } from './Header';
+import { You } from './components/subComponents/BestandYou/You';
 //yarn add react-router-dom@5
 // yarn add react-slick
 // yarn add react-icons
@@ -36,7 +37,10 @@ function App() {
 <div>
 <Route path="/" exact="true"  component={HomeBody}/>
 <Route path="/components/subComponents/OurStory"  component={OurStory}/>
-<Route path="/components/subComponents/BestandYou"  component={BestandYou}/>
+<Route path="/components/subComponents/BestandYou/Best"  component={Best}/>
+<Route path="/components/subComponents/BestandYou/You"
+component={You}
+/>
 <Route path="/components/subComponents/Product"  component={Product}/>
 </div>
 

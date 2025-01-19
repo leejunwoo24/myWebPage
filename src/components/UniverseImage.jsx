@@ -29,7 +29,7 @@ export function UniverseImage(){
         
         <motion.div
           initial={{opacity: 0}}
-          whileInView={{opacity: 1} }
+          whileInView={{opacity:1 } }
           transition={{
             ease: "easeInOut",
             duration: 0.75

@@ -28,7 +28,7 @@ export function Header(){
   </p>
   
   <p>
-  <Link className="routerLink" to="/components/subComponents/BestandYou">Best&You</Link>
+  <Link className="routerLink" to="/components/subComponents/BestandYou/Best">Best&You</Link>
   </p>
 
   <p>
